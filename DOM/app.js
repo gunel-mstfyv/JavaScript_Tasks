@@ -143,4 +143,22 @@ for (let i = 0; i < word.length; i++) {
     }, i * 500);
 }
 
-
+// let element = document.getElementById("element");
+// let text = "hello";
+// let i = 0;
+// let interval = setInterval(() => {
+//   console.log("right");
+//   element.textContent = text.slice(0, i++);
+//   if (i > text.length) {
+//     clearInterval(interval);
+//     setTimeout(() => {
+//       let interval2 = setInterval(() => {
+//         console.log("left");
+//         element.textContent = text.slice(0, i--);
+//         if (i < 0) {
+//           clearInterval(interval2);
+//         }
+//       }, 250);
+//     }, 2000);
+//   }
+// }, 250);
