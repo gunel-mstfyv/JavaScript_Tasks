@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-color: teal;
+  text-align: center;
+}
+.board {
+  width: 600px;
+  aspect-ratio: 1 / 1;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.box {
+  border: 1px solid #000;
+  cursor: pointer;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  user-select: none;
+}
+.board:not(.has__winner) .box:hover {
+  background-color: #f0f0f0;
+}
+.winner {
+  background-color: greenyellow;
+}
