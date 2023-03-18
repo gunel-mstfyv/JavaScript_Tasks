@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: darkslategrey;
+}
+
+.btn{
+    padding: 10px 25px;
+    color: darkslategray;
+    background-color: aliceblue;
+    border: 0;
+    cursor: pointer;
+    margin: 25px 50px;
+    font-size: 24px;  
+    letter-spacing: 1px; 
+    display: block; 
+}
+
+ul{
+    margin: 25px 50px;    
+    font-size: 24px;  
+    letter-spacing: 1px;    
+}
+
+ul li{
+    padding: 5px; 
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.slideshow{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 20px auto;
+}
+
+.slideshow img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+    transition: 0.8s;
+    transform: scale(0.4);
+}
+
+.slideshow button{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    font-size: 26px;
+    top: 50%;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 0;
+        
+}
+#prew{
+    left: -10px;
+    transform:translate(-100%,-50%);
+}
+
+#next{
+    right: -10px;
+    transform:translate(100%,-50%);
+}
+.active{
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+
+h1{
+    color:cadetblue;
+    font-size: 56px;
+   margin-left: 50px;
+    letter-spacing: 6px;
+    
+}
